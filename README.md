@@ -102,4 +102,4 @@ The app currently uses the HP-API (https://hp-api.onrender.com/api) for characte
 
 ## License
 
-MIT
+MIT.
