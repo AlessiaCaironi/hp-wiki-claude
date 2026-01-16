@@ -4,7 +4,7 @@ A Harry Potter Wiki application that lets you explore the magical world of Harry
 
 ![Harry Potter Wiki Screenshot](./public/screenshot.png)
 
-**API Source**: [HP-API](https://hp-api.onrender.com/api) - Provides character data and magical content
+**API Source**: [HP-API](https://vlaurencena.github.io/harry-potter-openapi-swagger-ui/) - Provides character data and magical content
 
 ## About
 
@@ -85,7 +85,7 @@ src/
 
 ## API Configuration
 
-The app currently uses the HP-API (https://hp-api.onrender.com/api) for character data. To use a different API:
+The app currently uses the HP-API (https://vlaurencena.github.io/harry-potter-openapi-swagger-ui/) for character data. To use a different API:
 
 1. Update the `API_BASE_URL` in `src/services/api.ts`
 2. Adjust the API methods in the `HarryPotterAPI` class to match your API endpoints
