@@ -3,6 +3,9 @@ import { Character, Spell, House, Book } from '../types';
 // Base API URL - update this to match the actual API endpoint
 const API_BASE_URL = 'https://hp-api.onrender.com/api';
 
+/**
+ * Service class for interacting with the Harry Potter API
+ */
 class HarryPotterAPI {
   private async fetchData<T>(endpoint: string): Promise<T> {
     try {
