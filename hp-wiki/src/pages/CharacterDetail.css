@@ -1,0 +1,164 @@
+.character-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #2c1a1e;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #d4af37;
+}
+
+.character-detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.character-detail-image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.character-detail-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.character-detail-info h1 {
+  margin: 0 0 1rem 0;
+  color: #2c1a1e;
+  font-size: 2.5rem;
+}
+
+.alternate-names {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-item .label {
+  font-weight: 600;
+  color: #2c1a1e;
+  min-width: 150px;
+}
+
+.detail-item .value {
+  color: #666;
+}
+
+.detail-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: #e0e0e0;
+  color: #2c1a1e;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.badge.alive {
+  background: #4caf50;
+  color: white;
+}
+
+.badge.deceased {
+  background: #757575;
+  color: white;
+}
+
+.house-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+}
+
+.house-badge.gryffindor {
+  background: linear-gradient(135deg, #740001 0%, #ae0001 100%);
+}
+
+.house-badge.hufflepuff {
+  background: linear-gradient(135deg, #ecb939 0%, #f0c75e 100%);
+  color: #2c1a1e;
+}
+
+.house-badge.ravenclaw {
+  background: linear-gradient(135deg, #0e1a40 0%, #222f5b 100%);
+}
+
+.house-badge.slytherin {
+  background: linear-gradient(135deg, #1a472a 0%, #2a623d 100%);
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+@media (max-width: 968px) {
+  .character-detail {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .character-detail-info h1 {
+    font-size: 2rem;
+  }
+
+  .detail-item .label {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .detail-item .label {
+    min-width: auto;
+  }
+}
