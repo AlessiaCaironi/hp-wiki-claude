@@ -1,6 +1,14 @@
 # Harry Potter Wiki
 
-A comprehensive Harry Potter Wiki built with React, TypeScript, and Vite, powered by the Harry Potter API.
+A Harry Potter Wiki application that lets you explore the magical world of Harry Potter. Browse characters, discover Hogwarts houses, and learn about magical spells.
+
+![Harry Potter Wiki Screenshot](./public/screenshot.png)
+
+**API Source**: [HP-API](https://hp-api.onrender.com/api) - Provides character data and magical content
+
+## About
+
+This is a comprehensive Harry Potter Wiki built with React, TypeScript, and Vite, powered by the Harry Potter API.
 
 ## Features
 
@@ -102,4 +110,4 @@ The app currently uses the HP-API (https://hp-api.onrender.com/api) for characte
 
 ## License
 
-MIT.
+MIT
