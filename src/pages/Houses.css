@@ -1,0 +1,146 @@
+.houses-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.houses-container h1 {
+  color: #2c1a1e;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.houses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.house-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.house-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.house-header {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.house-card.gryffindor .house-header {
+  background: linear-gradient(135deg, #740001 0%, #ae0001 100%);
+}
+
+.house-card.hufflepuff .house-header {
+  background: linear-gradient(135deg, #ecb939 0%, #f0c75e 100%);
+  color: #2c1a1e;
+}
+
+.house-card.ravenclaw .house-header {
+  background: linear-gradient(135deg, #0e1a40 0%, #222f5b 100%);
+}
+
+.house-card.slytherin .house-header {
+  background: linear-gradient(135deg, #1a472a 0%, #2a623d 100%);
+}
+
+.house-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.house-animal {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1.25rem;
+}
+
+.house-content {
+  padding: 2rem;
+}
+
+.house-detail {
+  margin-bottom: 1.5rem;
+}
+
+.house-detail strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c1a1e;
+}
+
+.color-badges,
+.traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.color-badge,
+.trait-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.color-badge {
+  background: #e0e0e0;
+  color: #2c1a1e;
+}
+
+.trait-badge {
+  background: #f5f5f5;
+  color: #2c1a1e;
+  border: 1px solid #d4af37;
+}
+
+.house-card.gryffindor .trait-badge {
+  border-color: #740001;
+}
+
+.house-card.hufflepuff .trait-badge {
+  border-color: #ecb939;
+}
+
+.house-card.ravenclaw .trait-badge {
+  border-color: #0e1a40;
+}
+
+.house-card.slytherin .trait-badge {
+  border-color: #1a472a;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .houses-grid {
+    grid-template-columns: 1fr;
+  }
+}
